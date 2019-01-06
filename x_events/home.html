@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--JQUERY -->
+<script>
+$(function(){ //jquery funkcija
+    $('#slideshow img:gt(0)').hide(); //skrije vse div-e v #slideshow
+    setInterval(function(){ //loop na 3000ms
+      $('#slideshow :first-child').fadeOut() //fade out prvi div po vrsti(opacity->display: none)
+         .next('img').fadeIn() //fade in naslednjega ko se prejsnji konca
+         .end().appendTo('#slideshow');}, //dodaj v #slideshow
+      3000); //cas za loop
+});
+</script>
+</head>
+<div id="centered">
+<br>
+<h1> Kdo smo? </h1>
+
+<p style="font-size: 17px;">
+X-Events je podjetje, ki se ukavrja z organizacijo in tehnično izvedbo prireditev.<br>
+Zavedamo se, da je vsaka prireditev unikatna in neponovljiva, zato sta nujno potrebna profesionalen pristop in kvalitetna izvedba.<br>
+Prav zato je naša ekipa sestavljena iz mladih, ambicioznih in močno tehnično podkovanih sodelavcev.<br>
+ Vsi naši delavci z dolgoletnimi iskušnjami v svoji stroki, vam bodo nudili pomoč pri vseh pomankljivostih.<br>
+</p>
+
+<br><hr width="650px"><br>
+
+<h1> Katero opremo uporabljamo? </h1>
+<img src="../img/x_events/oprema.jpg">
+<br><hr width="650px"><br>
+
+<h1> Galerija </h1>
+<div id="gallery">
+<table id="gallery">
+<tr>
+<td><img src="../img/x_events/gal1.jpg"></td>
+<td><img src="../img/x_events/gal2.jpg"></td>
+</tr>
+<tr>
+<td><img src="../img/x_events/gal3.jpg"></td>
+<td><img src="../img/x_events/gal4.jpg"></td>
+</tr>
+</table>
+</div>
+<br><hr width="650px"><br>
+
+<h1> Reference </h1>
+<div id="slideshow">
+<img src="../img/x_events/ref1.jpg">
+<img src="../img/x_events/ref2.png">
+<img src="../img/x_events/ref3.png">
+<img src="../img/x_events/ref4.png">
+<img src="../img/x_events/ref5.png">
+</div>
+<br><br><br>
+<br><hr width="650px"><br>
+
+<h1> Kje nas lahko najdete? </h1>
+<div class="mapouter"><!--zunanji div za maps, preprecuje overflow ipd. -->
+<div class="gmap_canvas">
+<iframe width="800" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=janzeva%20gora%2085&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><!--Google maps API -->
+</div>
+</div>
+<br><hr width="650px"><br> 
+<br>
+<a id="contactus_button" href="kontakt.html" target="box"> Kontaktirajte nas </a>
+<br>
+</div>
+</html>

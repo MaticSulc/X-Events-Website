@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="centered">
+<h1> Kontaktirajte nas </h1>
+<form action="../inc/contact.php" method="post" target="box" id="contact_form"> <!--Contact form, ki po kliku na submit izvede klic na contact.php in rezultat izpise v BOX-u -->
+	<input type="text" name="firstname" required placeholder="Ime..." ><br><br><!-- Znacka required naredi zahtevano polje, HTML5 -->
+	<input type="text" name="lastname" placeholder="Priimek..."><br><br>
+	<input type="email" name="email" required placeholder="E-mail..."><br><br>
+	<textarea placeholder="Sporočilo..." name="message" rows="6" cols="25" required></textarea><br>
+	<br><input type="submit" value="Submit">
+	</form>
+</div>
+</body>
+
+
+</html>

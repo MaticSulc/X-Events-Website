@@ -1,0 +1,250 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.dropdown {/*to je div v katerem je dropdown gumb*/
+    display: inline-block;
+    overflow: hidden;
+    border-top:128x #333;
+    vertical-align: middle;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F9F9F9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropbtn { /*to je dropdown gumb*/
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+	vertical-align: middle;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: grey; /*sprememba barve ob hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F9F9F9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #DDD;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.frame {
+  width: 100vw; /* vw, wh je viewport size, to je okno brskalnika, ki ni vedno enako!! */
+  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+}
+/*webkit scrollbar je za custom scrollbar*/
+::-webkit-scrollbar {
+width:8px;
+}
+
+::-webkit-scrollbar-track {
+
+background-color: black;
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+
+background-color: grey;
+border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+background-color: grey;
+
+}
+
+#centered{
+text-align: center;
+}
+
+#picture{
+	width: 600px;
+	height: auto;
+}
+#text-with-photo{
+text-align: center;
+width: 600px;
+display: block;
+margin: 0 auto;
+}
+#table_ozv{
+margin-left:auto; 
+margin-right:auto;
+border-spacing: 25px;
+
+}
+#table_izp{
+margin-left:auto; 
+margin-right:auto;
+border-spacing: 40px;
+}
+
+#table_osv{
+margin-left:auto; 
+margin-right:auto;
+border-spacing: 25px;
+
+}
+
+#ozv_photo{
+height:200px;
+width:250px;
+}
+
+
+#ozv_txt{
+max-width: 20px;
+word-break: break-all;
+overflow:hidden;
+text-align: center;
+}
+
+#izp_txt{
+max-width: 500px;
+word-break: break-all;
+overflow:hidden;
+
+}
+
+#contactus_button{
+border: none;
+background: #404040;
+color: #ffffff !important;
+font-weight: 100;
+padding: 20px;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+text-decoration:none;
+line-height: 0;
+}
+#contactus_button:hover{
+color: #404040 !important;
+font-weight: 700 !important;
+letter-spacing: 3px;
+background: none;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.3s ease 0s;
+text-decoration: none;
+}
+
+form{/*za center*/
+margin: 0 auto;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 20%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /*okrogel rob*/
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #404040;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #666666;
+}
+
+#izp_photo{
+
+height: 250px;
+width: 400px;
+	
+	
+	
+}
+h1{
+	text-align: center;
+}
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+#gallery{
+margin-left: auto;
+margin-right: auto;
+}
+
+#slideshow{
+position:relative;
+margin-left: auto;
+margin-right: auto;
+width: 600px;
+height: 150px;
+overflow: hidden; /* TO MORE BIT DRUGACE BO OVERFLOW NEVEM ZAKAJ AMPAK PUSTI */
+}
+#slideshow img{
+position:relative; 
+height: 150px;
+width: 600px;
+}
+.mapouter{
+	text-align:right;
+	height:500px;
+	width:700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;/*important tag overwrita ostale*/
+	height:500px;
+	width:700px;
+}	

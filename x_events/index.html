@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> X-Events </title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">	<!--Mobile devices -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--To je za dropdown arrow -->
+<link rel="stylesheet" href="../css/style.css">
+<meta charset="UTF-8">
+
+<!-- TO SO IKONE ZA VSE PLATFORME -->
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+<link rel="manifest" href="../img/site.webmanifest">
+<link rel="mask-icon" href="../img/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../img/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Domov</a>
+  <div class="dropdown">
+   <button class="dropbtn">Storitve <i class="fa fa-caret-down"></i> </button>
+   <div class="dropdown-content">
+		<a href="ozvocenje_prireditev.html" target="box" >Ozvočenje prireditev </a>
+		<a href="osvetlitev_prireditev.html" target="box">Osvetlitev prireditev </a>
+		<a href="izposoja.html" target="box">Izposoja </a>
+	</div>
+ </div>
+ 	<a href="kontakt.html" target="box">Kontakt </a>
+	<a href="faq.html" target="box">FAQ </a>
+	<a style="float:right;" href="../index.html">Nazaj</a>
+</div>
+
+<iframe src="home.html" class="frame"  frameborder="0" name="box" onload="window.parent.parent.scrollTo(0,0)"> <!--onload, da skoci na vrh, problem ko scrollamo dol po strani-->
+
+</body>
+</html>

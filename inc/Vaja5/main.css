@@ -1,0 +1,27 @@
+h1 {
+    color:maroon;
+}
+a:visited{
+
+	color:grey;
+	text-decoration:underline;
+}
+a:hover{
+
+	color:red;
+}
+a:active{
+	color:yellow;
+}
+a:link{
+	color:blue;
+text-decoration:none;}
+.list{
+	font-size:25px;
+	padding-top:40px;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+.gallery{
+	padding-left:93px;
+}
